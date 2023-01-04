@@ -1,1 +1,3 @@
 .DS-Store
+/build
+/node_modules
