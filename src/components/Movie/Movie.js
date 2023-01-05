@@ -1,19 +1,21 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import styles from "./Movie.css";
+import styles from "./Movie.module.css";
 
 function Movie({ id, coverImg, title, genres }) {
   return (
-    <div>
+    <div className="mainContainer">
       <img src={coverImg} alt={title}></img>
-      <h2>
-        <Link className={"titleLink"} to={`/movie/${id}`}>
+      <h2 className="title">
+        <Link className="titleLink" to={`/movie/${id}`}>
           {title}
         </Link>
       </h2>
-      <ul>
+      <ul className="genereGroup">
         {genres.map((g) => (
-          <li key={g}>{g}</li>
+          <li className="genereList" key={g}>
+            {g}
+          </li>
         ))}
       </ul>
     </div>

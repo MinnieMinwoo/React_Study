@@ -1,0 +1,23 @@
+.mainContainer {
+    width: 230px;
+}
+.title {
+    margin: 5px;
+}
+.titleLink {
+    margin: 5px 0;
+    text-decoration: none;
+    color: white;
+}
+.genereGroup {
+    margin: 0;
+    padding: 0;
+}
+.genereList {
+    background-color: gold;
+    display: inline-block;
+    margin: 5px;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 16px;
+}

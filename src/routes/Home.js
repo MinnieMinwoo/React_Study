@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Movie from "../components/Movie.js";
+import Movie from "../components/Movie/Movie.js";
 import styles from "./Home.css";
 
 function Home() {

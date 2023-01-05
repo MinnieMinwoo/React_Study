@@ -1,22 +1,18 @@
-div {
-    width: 230px;
+.continer {
+    display: flex;
 }
-h2 {
-    margin: 5px;
-}
-.titleLink {
-    margin: 5px 0;
-    text-decoration: none;
+
+.title {
     color: white;
 }
-p {
+
+.contents {
     color: white;
 }
-ul {
-    margin: 0;
-    padding: 0;
+.genereGroup {
+    color:white;
 }
-li {
+.genereList {
     background-color: gold;
     display: inline-block;
     margin: 5px;
