@@ -1,23 +1,25 @@
-.mainContainer {
+.movieMainDiv {
     width: 230px;
-}
-.title {
+  }
+  .movieTitleDiv {
     margin: 5px;
-}
-.titleLink {
-    margin: 5px 0;
-    text-decoration: none;
+  }
+  .title,
+  .year,
+  .rate,
+  .genreText,
+  .detail {
     color: white;
-}
-.genereGroup {
+  }
+  .genreBlock {
     margin: 0;
     padding: 0;
-}
-.genereList {
+  }
+  .genreList {
     background-color: gold;
     display: inline-block;
     margin: 5px;
     padding: 4px;
     border-radius: 5px;
     font-size: 16px;
-}
+  }
