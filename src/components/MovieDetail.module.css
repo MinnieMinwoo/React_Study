@@ -1,25 +1,40 @@
 .movieMainDiv {
-    width: 230px;
+    display: flex;
+    margin: 100px 25vw;
   }
-  .movieTitleDiv {
-    margin: 5px;
-  }
+.movieImg {
+  width: 25vw;
+  margin-right: 10px;
+}
+.movieInfo {
+  width: 25vw;
+  margin-left: 10px;
+}
+.movieTitleDiv {
+  margin: 5px;
+}
   .title,
   .year,
   .rate,
   .genreText,
   .detail {
-    color: white;
-  }
-  .genreBlock {
-    margin: 0;
-    padding: 0;
-  }
-  .genreList {
-    background-color: gold;
-    display: inline-block;
-    margin: 5px;
-    padding: 4px;
-    border-radius: 5px;
-    font-size: 16px;
-  }
+  color: white;
+}
+.title,
+.year,
+.rate,
+.genreBlock{
+  text-align: center;
+}
+.genreBlock {
+  margin: 0;
+  padding: 0;
+}
+.genreList {
+  background-color: gold;
+  display: inline-block;
+  margin: 5px;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 16px;
+}
