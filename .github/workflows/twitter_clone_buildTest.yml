@@ -26,9 +26,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - name: move directory
     - run: cd twitter-clone
-    - name: install npm modules
     - run: npm install
-    - name: npm build test
     - run: npm start
