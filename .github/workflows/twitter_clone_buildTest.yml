@@ -21,6 +21,7 @@ jobs:
         
     steps:
     - uses: actions/checkout@v3
-    - run: cd twitter-clone
-    - run: npm install
-    - run: npm start
+    - run: |
+        cd twitter-clone
+        npm install
+        npm start
