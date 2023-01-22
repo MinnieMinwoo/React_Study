@@ -1,0 +1,18 @@
+.main {
+    margin-top: 10px;
+    width: 250px;
+}
+.productTable {
+    margin-top: 10px;
+    display: flex;
+    font-weight: bold;
+}
+
+.name {
+    flex-grow: 0;
+    flex-basis: 40%;
+}
+
+.price {
+    flex-grow: 1;
+}
