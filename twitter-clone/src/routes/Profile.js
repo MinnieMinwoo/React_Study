@@ -10,6 +10,7 @@ const Profile = ({ refreshUser, userObj }) => {
     const onLogOutClick = () => {
         signOut(authService);
         navigate("/", { replace: true });
+        refreshUser();
     };
     const onChange = (event) => {
         const {
@@ -38,18 +39,39 @@ const Profile = ({ refreshUser, userObj }) => {
         getMyTweets();
     }, []);
     return (
-        <>
+        <div
+            className="container"
+            style={{
+                maxWidth: 890,
+                width: "100%",
+                margin: "0 auto",
+                marginTop: 80,
+                display: "flex",
+                justifyContent: "center",
+            }}
+        >
             <form onSubmit={onSubmit}>
                 <input
                     onChange={onChange}
                     type="text"
+                    autoFocus
                     placeholder="Display name"
                     value={newDisplayName}
+                    className="formInput"
                 />
-                <input type="submit" value="Update Profile" />
+                <input
+                    type="submit"
+                    value="Update Profile"
+                    className="formBtn"
+                    style={{
+                        marginTop: 10,
+                    }}
+                />
             </form>
-            <button onClick={onLogOutClick}>Log Out</button>
-        </>
+            <button className="formBtn cancelBtn logOut" onClick={onLogOutClick}>
+                Log Out
+            </button>
+        </div>
     );
 };
 export default Profile;
